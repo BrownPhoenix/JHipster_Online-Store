@@ -43,6 +43,18 @@ public class CacheConfiguration {
             createCache(cm, org.jhipster.store.domain.User.class.getName());
             createCache(cm, org.jhipster.store.domain.Authority.class.getName());
             createCache(cm, org.jhipster.store.domain.User.class.getName() + ".authorities");
+            createCache(cm, org.jhipster.store.domain.Product.class.getName());
+            createCache(cm, org.jhipster.store.domain.ProductCategory.class.getName());
+            createCache(cm, org.jhipster.store.domain.ProductCategory.class.getName() + ".products");
+            createCache(cm, org.jhipster.store.domain.Customer.class.getName());
+            createCache(cm, org.jhipster.store.domain.Customer.class.getName() + ".orders");
+            createCache(cm, org.jhipster.store.domain.ProductOrder.class.getName());
+            createCache(cm, org.jhipster.store.domain.ProductOrder.class.getName() + ".orderItems");
+            createCache(cm, org.jhipster.store.domain.ProductOrder.class.getName() + ".invoices");
+            createCache(cm, org.jhipster.store.domain.OrderItem.class.getName());
+            createCache(cm, org.jhipster.store.domain.Invoice.class.getName());
+            createCache(cm, org.jhipster.store.domain.Invoice.class.getName() + ".shipments");
+            createCache(cm, org.jhipster.store.domain.Shipment.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
